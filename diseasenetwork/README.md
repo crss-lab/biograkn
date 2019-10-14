@@ -17,7 +17,7 @@ limit 10; get;
 ![Proteins encoded by gene with entrez-id of 100137049](q-1.png)
 
 ### Which diseases affect the appendix tissue?
-Note that the data to answer this question is not explicitly stored in the knowledge graph. The [`protein-disease-association-and-tissue-enhancement-implies-disease-tissue-association Rule`](./schema.gql#L216) enables us to get the answer to this question using the following query.
+Note that the data to answer this question is not explicitly stored in the knowledge graph. The [`protein-disease-association-and-tissue-enhancement-implies-disease-tissue-association Rule`](./schema/disease-netowrk-schema.gql#L216) enables us to get the answer to this question using the following query.
 
 ```
 match
@@ -29,7 +29,7 @@ limit 10; get;
 ![Disease that affect appendix tissue](q-2.png)
 
 ### What are the proteins associated with Asthma?
-Note that the data to answer this question is not explicitly stored in the knowledge graph. The [`gene-disease-association-and-gene-protein-encoding-protein-disease-association Rule`](./schema.gql#L169) enables us to get the answer to this question using the following query.
+Note that the data to answer this question is not explicitly stored in the knowledge graph. The [`gene-disease-association-and-gene-protein-encoding-protein-disease-association Rule`](./schema/disease-netowrk-schema.gql#L169) enables us to get the answer to this question using the following query.
 
 ```
 match
@@ -42,7 +42,7 @@ limit 10; get;
 
 
 ### Which diseases are associated with protein interactions taking place in the liver?
-This query also makes use of the [`gene-disease-association-and-gene-protein-encoding-protein-disease-association Rule`](./schema.gql#L169).
+This query also makes use of the [`gene-disease-association-and-gene-protein-encoding-protein-disease-association Rule`](./schema/disease-netowrk-schema.gql#L169).
 
 ```
 match
